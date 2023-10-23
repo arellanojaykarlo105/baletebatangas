@@ -1,5 +1,9 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
+import { ref } from 'vue'
+import PrimaryButton from '../Components/PrimaryButton.vue';
+import NavBar from '../Components/NavBar.vue'
+
 
 defineProps({
     canLogin: {
@@ -16,136 +20,26 @@ defineProps({
         type: String,
         required: true,
     },
+
 });
 </script>
 
 <template>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUNICIPALITY OF BALETE BATANGAS</title>
-
-    <!-- Tailwind CSS CDN Link -->
-    <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
-
-    <style>
-        /* Custom styles not handled by Tailwind */
-        .bg-skin {
-            background: #0062cc;
-        }
-
-        .nav>li>a:hover, .nav>li>a:focus {
-            text-decoration: none;
-            background-color: #251f1f00;
-        }
-
-        .btn-skin {
-            background-color: #0062cc;
-            border-color: #0062cc;
-        }
-
-        .box h4 {
-            font-size: 24px;
-            color: white;
-        }
-
-        .service-desc h5 {
-            margin-bottom: 10px;
-            color: white;
-        }
-
-        .fa-stethoscope:before {
-            color: white;
-        }
-
-        .fa-h-square:before {
-            color: white;
-        }
-
-        .fa-wheelchair:before {
-            color: white;
-        }
-
-        .fa-filter:before {
-            color: white;
-        }
-
-        .fa-plus-square:before {
-            color: white;
-        }
-
-        .fa-user-md:before {
-            color: white;
-            background: #00ffff2b;
-        }
-
-        .fa-check:before {
-            background: #084dbe;
-        }
-
-        .fa-list-alt:before {
-            background: #005cd0;
-        }
-
-        .fa-hospital-o:before {
-            background: #0eacf0de;
-        }
-
-        .fa-heartbeat:before {
-            color: white;
-        }
-
-        footer .widget h5 {
-            font-size: 20px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            color: white;
-        }
-
-        .intro-content {
-            /*background: url(../img/dummy/bg1.jpg) no-repeat top center;*/
-            background: linear-gradient(96.2deg, rgb(255, 230, 112) 10.4%, rgb(255, 100, 100) 43.8%, rgb(0, 93, 219) 105.8%);
-            padding: 200px 0 60px;
-        }
-    </style>
-</head>
-<body class="bg-gray-100">
-
-<div class="container navigation" style="background: linear-gradient(96.2deg, rgb(255, 230, 112) 10.4%, rgb(255, 100, 100) 43.8%, rgb(0, 93, 219) 105.8%);width: 98.85vw;height: 70px;padding-top: 10px;">
+    <NavBar />
+<div class="" style="background: linear-gradient(96.2deg, rgb(255, 230, 112) 10.4%, rgb(255, 100, 100) 43.8%, rgb(0, 93, 219) 105.8%);width: 98.85vw;height: 70px;padding-top: 10px;">
     <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-            <i class="fa fa-bars"></i>
-        </button>
         <a class="navbar-brand js-scroll-trigger" href="index.php" style="margin-top: 0px;font-family: 'IBM Plex Sans', sans-serif;">
             <h5 style="color: white;">MUNICIPALITY OF BALETE</h5>
         </a>
     </div>
-    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+    <div class="">
         <ul class="nav navbar-nav">
             <li class="active" style="margin-right: 40px;font-family: 'IBM Plex Sans', sans-serif;">
-                <a href="#" style="color: white;">HOME</a>
             </li>
-            <div style="margin-top: 10px;" class="dropdown collapse navbar-collapse navbar-right navbar-main-collapse">
+            <div style="margin-top: 10px;" class="">
                 <button style="background: linear-gradient(96.2deg, rgb(255, 230, 112) 10.4%, rgb(255, 100, 100) 43.8%, rgb(0, 93, 219) 105.8%)" type="button" class="btn">
                     Login to your Barangay
                 </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="Barangay 1/">Barangay Alangilan</a></li>
-                    <li><a class="dropdown-item" href="Barangay 2/">Barangay Calawit</a></li>
-                    <li><a class="dropdown-item" href="Barangay 3/">Barangay Looc</a></li>
-                    <li><a class="dropdown-item" href="Barangay 4/">Barangay Magapi</a></li>
-                    <li><a class="dropdown-item" href="Barangay 5/">Barangay Makani</a></li>
-                    <li><a class="dropdown-item" href="Barangay 6/">Barangay Malabanan</a></li>
-                    <li><a class="dropdown-item" href="Barangay 7/">Barangay Paligawan</a></li>
-                    <li><a class="dropdown-item" href="Barangay 8/">Barangay Palsara</a></li>
-                    <li><a class="dropdown-item" href="Barangay 9/">Barangay Poblacion</a></li>
-                    <li><a class="dropdown-item" href="Barangay 10/">Barangay Sala</a></li>
-                    <li><a class="dropdown-item" href="Barangay 11/">Barangay Sampalocan</a></li>
-                    <li><a class="dropdown-item" href="Barangay 12/">Barangay San Sebastian</a></li>
-                    <li><a class="dropdown-item" href="Barangay 13/">Barangay Solis</a></li>
-                </ul>
             </div>
         </ul>
     </div>
@@ -298,22 +192,92 @@ defineProps({
 </div>
 
 <!-- Core JavaScript Files -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/jquery.scrollTo.js"></script>
-<script src="js/jquery.appear.js"></script>
+<!-- <script src="js/wow.min.js"></script>
 <script src="js/stellar.js"></script>
 <script src="plugins/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
 <script src="js/nivo-lightbox.min.js"></script>
-<script src="js/custom.js"></script>
-</body>
-</html>
+<script src="js/custom.js"></script> -->
 
 </template>
 
-<style>
 
+<style>
+/* Custom styles not handled by Tailwind */
+.bg-skin {
+    background: #0062cc;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    text-decoration: none;
+    background-color: #251f1f00;
+}
+
+.btn-skin {
+    background-color: #0062cc;
+    border-color: #0062cc;
+}
+
+.box h4 {
+    font-size: 24px;
+    color: white;
+}
+
+.service-desc h5 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.fa-stethoscope:before {
+    color: white;
+}
+
+.fa-h-square:before {
+    color: white;
+}
+
+.fa-wheelchair:before {
+    color: white;
+}
+
+.fa-filter:before {
+    color: white;
+}
+
+.fa-plus-square:before {
+    color: white;
+}
+
+.fa-user-md:before {
+    color: white;
+    background: #00ffff2b;
+}
+
+.fa-check:before {
+    background: #084dbe;
+}
+
+.fa-list-alt:before {
+    background: #005cd0;
+}
+
+.fa-hospital-o:before {
+    background: #0eacf0de;
+}
+
+.fa-heartbeat:before {
+    color: white;
+}
+
+footer .widget h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.intro-content {
+    /*background: url(../img/dummy/bg1.jpg) no-repeat top center;*/
+    background: linear-gradient(96.2deg, rgb(255, 230, 112) 10.4%, rgb(255, 100, 100) 43.8%, rgb(0, 93, 219) 105.8%);
+    padding: 200px 0 60px;
+}
 </style>
