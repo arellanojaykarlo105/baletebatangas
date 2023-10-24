@@ -23,6 +23,8 @@
         "vue": "^3.2.41"
     },
     "dependencies": {
-        "laravel-vite-plugin": "^0.8.1"
+        "@fortawesome/fontawesome-svg-core": "^6.4.2",
+        "laravel-vite-plugin": "^0.8.1",
+        "owl.carousel": "^2.3.4"
     }
 }
