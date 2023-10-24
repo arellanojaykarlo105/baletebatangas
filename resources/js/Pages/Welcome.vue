@@ -61,7 +61,13 @@ defineProps({
                 </div>
             </ul>
         </div>
+<div class="" style="background: linear-gradient(96.2deg, rgb(255, 230, 112) 10.4%, rgb(255, 100, 100) 43.8%, rgb(0, 93, 219) 105.8%);width: 98.85vw;height: 70px;padding-top: 10px;">
+    <div class="navbar-header page-scroll">
+        <a class="navbar-brand js-scroll-trigger" href="index.php" style="margin-top: 0px;font-family: 'IBM Plex Sans', sans-serif;">
+            <h5 style="color: white;">LOREN</h5>
+        </a>
     </div>
+</div>
 
     <div id="wrapper">
         <section
