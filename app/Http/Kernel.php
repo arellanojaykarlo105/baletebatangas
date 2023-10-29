@@ -31,7 +31,20 @@ class Kernel extends HttpKernel
     protected $middlewareGroups = [
         'web' => [
             \App\Http\Middleware\EncryptCookies::class,
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
             \App\Http\Middleware\BarangayAuthorizationMiddleware::class,
+=======
+<<<<<<< Updated upstream
+=======
+            // \App\Http\Middleware\BarangayAuthorizationMiddleware::class,
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+=======
+=======
+            // \App\Http\Middleware\BarangayAuthorizationMiddleware::class,
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
