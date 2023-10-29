@@ -2,10 +2,12 @@
 import { Head, Link } from "@inertiajs/vue3";
 import { ref } from "vue";
 import PrimaryButton from "../Components/PrimaryButton.vue";
-import Footer from '@/Components/Footer.vue'
+import Footer from "@/Components/Footer.vue";
 import NavBar from "@/Components/NavBar.vue";
 
-const bgImage = ref('https://ghogli.com.ph/wp-content/uploads/2023/04/ezgif.com-gif-maker-17.webp')
+const bgImage = ref(
+    "https://ghogli.com.ph/wp-content/uploads/2023/04/ezgif.com-gif-maker-17.webp"
+);
 
 defineProps({
     canLogin: {
@@ -30,22 +32,30 @@ defineProps({
     <div class="bg-gray-100 py-20">
         <div class="grid grid-cols-2 mx-20 border shadow-lvl-2 bg-white">
             <div class="text-right px-4 py-6">
-                <h1 class="text-8xl font-bold uppercase">Municipality of Balete Batangas</h1>
+                <h1 class="text-8xl font-bold uppercase">
+                    Municipality of Balete Batangas
+                </h1>
                 <p class="text-2xl">Your are welcome to our Municipality</p>
             </div>
-            <img :src="bgImage" alt="">
+            <img :src="bgImage" alt="" />
         </div>
         <div class="grid grid-cols-2 mx-20 border shadow-lvl-2 mt-10 bg-white">
             <div class="text-right px-40">
-                <img class="m-auto w-full aspect-square  animate-jump-in animate-ease-in animate-delay-300"
-                    src="../../images/mayor.png" alt="" />
+                <img
+                    class="m-auto w-full aspect-square animate-jump-in animate-ease-in animate-delay-300"
+                    src="../../images/mayor.png"
+                    alt=""
+                />
             </div>
             <div class="text-left px-4 py-2">
-
-                <h2 class="text-neutral-900 text-left text-6xl font-semibold font-sans">
+                <h2
+                    class="text-neutral-900 text-left text-6xl font-semibold font-sans"
+                >
                     Welcome to Balete, Batangas
                 </h2>
-                <h4 class="mt-20 text-gray-800 text-center font-semibold font-sans text-2xl">
+                <h4
+                    class="mt-20 text-gray-800 text-center font-semibold font-sans text-2xl"
+                >
                     The Municipality of Balete in Batangas is a warm hug to
                     those who long to veer away from the troubles of the city.
                     Bike in and around the place and feel the gentle hills
@@ -70,8 +80,8 @@ defineProps({
     background: #0062cc;
 }
 
-.nav>li>a:hover,
-.nav>li>a:focus {
+.nav > li > a:hover,
+.nav > li > a:focus {
     text-decoration: none;
     background-color: #251f1f00;
 }
