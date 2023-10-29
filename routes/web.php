@@ -39,4 +39,20 @@ Route::get('/barangay', function () {
     return Inertia::render('Barangay');
 })->name('barangay');;
 
-require __DIR__.'/auth.php';
+Route::inertia('/barangays/{barangay_id}/announcements', 'AnnouncementComponent')
+    ->name('announcement.index')
+    ->middleware(['barangay.authorization']);
+
+Route::get('/barangays', 'BarangayController@index')->name('barangays.index');
+Route::get('/barangays/create', 'BarangayController@create')->name('barangays.create');
+Route::post('/barangays', 'BarangayController@store')->name('barangays.store');
+
+Route::get('/barangays/{barangay_id}/announcements/create', 'AnnouncementController@create');
+Route::post('/barangays/{barangay_id}/announcements', 'AnnouncementController@store');
+Route::get('/barangays/{barangay_id}/announcements/{announcement}/edit', 'AnnouncementController@edit');
+Route::put('/barangays/{barangay_id}/announcements/{announcement}', 'AnnouncementController@update');
+Route::delete('/barangays/{barangay_id}/announcements/{announcement}', 'AnnouncementController@destroy');
+
+
+
+require __DIR__ . '/auth.php';

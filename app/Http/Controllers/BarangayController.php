@@ -2,32 +2,32 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Barangay;
 use Illuminate\Http\Request;
 
 class BarangayController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        //
+        $barangays = Barangay::all();
+        return inertia('Barangay/Index', compact('barangays'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+    public function create()
+    {
+        return inertia('Barangay/Create');
+    }
+
     public function store(Request $request)
     {
-        //
-    }
+        $validatedData = $request->validate([
+            'name' => 'required|string',
+            'description' => 'string|nullable',
+        ]);
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
+        Barangay::create($validatedData);
+
+        return redirect()->route('barangays.index')->with('success', 'Barangay added successfully');
     }
 
     /**

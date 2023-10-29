@@ -2,7 +2,7 @@
 import { Head, Link } from "@inertiajs/vue3";
 import { ref } from "vue";
 import PrimaryButton from "../Components/PrimaryButton.vue";
-import NavBar from "../Components/NavBar.vue";
+import NavBar from "@/Components/NavBar.vue";
 
 defineProps({
     canLogin: {
@@ -23,12 +23,11 @@ defineProps({
 </script>
 
 <template>
-    <NavBar/>
-    
     <div>
+        <NavBar />
         <section>
             <div class="border-transparent rounded-md shadow-lg focus:box-content h-40 w-auto p-4 border-4 bg-green-300">
-                <div >
+                <div>
                     <div>
                         <div>
                             <div>
@@ -42,66 +41,50 @@ defineProps({
                                 </h4>
                             </div>
                             <div>
-                                <div
-                                    class="wow fadeInRight"
-                                    data-wow-delay="0.1s"
-                                >
+                                <div class="wow fadeInRight" data-wow-delay="0.1s">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div
-                                class="wow fadeInUp"
-                                data-wow-duration="2s"
-                                data-wow-delay="0.2s"
-                            >
-                                <img
-                                    src="Picture/municipal.jpg"
-                                    class="img-responsive"
-                                    alt=""
-                                />
+                            <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+                                <img src="Picture/municipal.jpg" class="img-responsive" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="bg-gray-900 bg-ttuPattern bg-cover py-20 sm:py-32" >
-                        <div>  
-                            <h2
-                                class="text-neutral-900 text-center text-6xl font-semibold font-sans"
-                            >
-                                Welcome to Balete, Batangas
-                            </h2>
-                        </div>
-                        <div><img class="h-80 w-80 animate-jump-in animate-ease-in animate-delay-300" src="../../images/mayor.png" alt="">
-                            <h4
-                                class="mt-20 text-white text-center font-semibold font-sans text-2xl"
-                            >
-                                The Municipality of Balete in Batangas is a warm
-                                hug to those who long to veer away from the
-                                troubles of the city. Bike in and around the
-                                place and feel the gentle hills beneath, observe
-                                a little bit more and take-in the slow, relaxing
-                                cadence of suburban life. Find yourself in a
-                                handful of recreational resorts and be
-                                overwhelmed not only by the amenities but also
-                                by its serene backdrop--- Lake Taal. Witness the
-                                crimson sun set as it hides itself behind the
-                                famous Taal Volcano, munch on a healthy serving
-                                of Sumang Dapa paired with a steaming cup of
-                                Barako, and you'd have one of the most
-                                comforting afternoons of your life.
-                            </h4>
-                        </div>
+        <section class="bg-gray-900 bg-ttuPattern bg-cover py-20 sm:py-32">
+            <div>
+                <h2 class="text-neutral-900 text-center text-6xl font-semibold font-sans">
+                    Welcome to Balete, Batangas
+                </h2>
+            </div>
+            <div><img class="h-80 w-80 animate-jump-in animate-ease-in animate-delay-300" src="../../images/mayor.png"
+                    alt="">
+                <h4 class="mt-20 text-white text-center font-semibold font-sans text-2xl">
+                    The Municipality of Balete in Batangas is a warm
+                    hug to those who long to veer away from the
+                    troubles of the city. Bike in and around the
+                    place and feel the gentle hills beneath, observe
+                    a little bit more and take-in the slow, relaxing
+                    cadence of suburban life. Find yourself in a
+                    handful of recreational resorts and be
+                    overwhelmed not only by the amenities but also
+                    by its serene backdrop--- Lake Taal. Witness the
+                    crimson sun set as it hides itself behind the
+                    famous Taal Volcano, munch on a healthy serving
+                    of Sumang Dapa paired with a steaming cup of
+                    Barako, and you'd have one of the most
+                    comforting afternoons of your life.
+                </h4>
+            </div>
         </section>
 
-        <footer
-            style="
+        <footer style="
                 background-image:-moz-linear-gradient(#000000,#097950,#00d4ff); 
                 color: ;
-            "
-        >
+            ">
             <div class="shadow-XL container">
                 <div class="row">
                     <div class="col-sm-6 col-md-4">
@@ -118,24 +101,16 @@ defineProps({
                                 <h5>Information</h5>
                                 <ul>
                                     <li>
-                                        <a style="color: #0a0a0a" href="#"
-                                            >Home</a
-                                        >
+                                        <a style="color: #0a0a0a" href="#">Home</a>
                                     </li>
                                     <li>
-                                        <a style="color: #0a0a0a" href="#"
-                                            >Location</a
-                                        >
+                                        <a style="color: #0a0a0a" href="#">Location</a>
                                     </li>
                                     <li>
-                                        <a style="color: #0a0a0a" href="#"
-                                            >Barangays</a
-                                        >
+                                        <a style="color: #0a0a0a" href="#">Barangays</a>
                                     </li>
                                     <li>
-                                        <a style="color: #0a0a0a" href="#"
-                                            >Mayor</a
-                                        >
+                                        <a style="color: #0a0a0a" href="#">Mayor</a>
                                     </li>
                                 </ul>
                             </div>
@@ -149,25 +124,19 @@ defineProps({
                                 <ul>
                                     <li>
                                         <span class="fa-stack fa-lg">
-                                            <i
-                                                class="fa fa-calendar-o fa-stack-1x fa-inverse"
-                                            ></i>
+                                            <i class="fa fa-calendar-o fa-stack-1x fa-inverse"></i>
                                         </span>
                                         Monday - Saturday, 8am to 10pm
                                     </li>
                                     <li>
                                         <span class="fa-stack fa-lg">
-                                            <i
-                                                class="fa fa-phone fa-stack-1x fa-inverse"
-                                            ></i>
+                                            <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
                                         </span>
                                         (043) 740 9638
                                     </li>
                                     <li>
                                         <span class="fa-stack fa-lg">
-                                            <i
-                                                class="fa fa-envelope-o fa-stack-1x fa-inverse"
-                                            ></i>
+                                            <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
                                         </span>
                                         xinfo@baletebatangas.gov.ph
                                     </li>
@@ -187,31 +156,20 @@ defineProps({
                                 <h5>Follow us</h5>
                                 <ul class="company-social">
                                     <li class="social-facebook">
-                                        <a
-                                            href="https://www.facebook.com/559896924173732?ref=embed_page"
-                                            ><i class="fa fa-facebook"></i
-                                        ></a>
+                                        <a href="https://www.facebook.com/559896924173732?ref=embed_page"><i
+                                                class="fa fa-facebook"></i></a>
                                     </li>
                                     <li class="social-twitter">
-                                        <a href="#"
-                                            ><i class="fa fa-twitter"></i
-                                        ></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
                                     </li>
                                     <li class="social-google">
-                                        <a
-                                            href="https://www.baletebatangas.gov.ph/"
-                                            ><i class="fa fa-google"></i
-                                        ></a>
+                                        <a href="https://www.baletebatangas.gov.ph/"><i class="fa fa-google"></i></a>
                                     </li>
                                     <li class="social-vimeo">
-                                        <a href="#"
-                                            ><i class="fa fa-vimeo-square"></i
-                                        ></a>
+                                        <a href="#"><i class="fa fa-vimeo-square"></i></a>
                                     </li>
                                     <li class="social-dribble">
-                                        <a href="#"
-                                            ><i class="fa fa-dribbble"></i
-                                        ></a>
+                                        <a href="#"><i class="fa fa-dribbble"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -221,6 +179,7 @@ defineProps({
             </div>
         </footer>
     </div>
+
 
     <!-- Core JavaScript Files -->
     <!-- <script src="js/wow.min.js"></script>
@@ -236,8 +195,8 @@ defineProps({
     background: #0062cc;
 }
 
-.nav > li > a:hover,
-.nav > li > a:focus {
+.nav>li>a:hover,
+.nav>li>a:focus {
     text-decoration: none;
     background-color: #251f1f00;
 }
