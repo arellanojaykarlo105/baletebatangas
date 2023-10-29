@@ -31,20 +31,7 @@ class Kernel extends HttpKernel
     protected $middlewareGroups = [
         'web' => [
             \App\Http\Middleware\EncryptCookies::class,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-            \App\Http\Middleware\BarangayAuthorizationMiddleware::class,
-=======
-<<<<<<< Updated upstream
-=======
             // \App\Http\Middleware\BarangayAuthorizationMiddleware::class,
->>>>>>> Stashed changes
->>>>>>> Stashed changes
-=======
-=======
-            // \App\Http\Middleware\BarangayAuthorizationMiddleware::class,
->>>>>>> Stashed changes
->>>>>>> Stashed changes
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
@@ -80,6 +67,5 @@ class Kernel extends HttpKernel
         'signed' => \App\Http\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \App\Http\Middleware\EnsureEmailIsVerified::class,
-        'barangay.authorization' => \App\Http\Middleware\BarangayAuthorizationMiddleware::class,
     ];
 }

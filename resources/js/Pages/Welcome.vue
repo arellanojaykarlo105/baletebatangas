@@ -23,22 +23,8 @@ defineProps({
 </script>
 
 <template>
-<<<<<<< Updated upstream
-    <NavBar />
-<<<<<<< Updated upstream
-    <div class=" w-98.85vw h-30px p-5">
-=======
-    <div
-        class=" w-98.85vw h-30px p-5"
-    >
-=======
     <NavBar :canLogin="canLogin" />
     <div class=" w-98.85vw h-30px p-5">
->>>>>>> Stashed changes
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
         <div class="navbar-header page-scroll">
             <a class="navbar-brand js-scroll-trigger" href="index.php" style="
                     margin-top: 0px;
@@ -62,14 +48,7 @@ defineProps({
                 </div>
             </ul>
         </div>
-<div class="" style="background: linear-gradient(96.2deg, rgb(255, 230, 112) 10.4%, rgb(255, 100, 100) 43.8%, rgb(0, 93, 219) 105.8%);width: 98.85vw;height: 70px;padding-top: 10px;">
-    <div class="navbar-header page-scroll">
-        <a class="navbar-brand js-scroll-trigger" href="index.php" style="margin-top: 0px;font-family: 'IBM Plex Sans', sans-serif;">
-            <h5 style="color: white;">LOREN</h5>
-        </a>
     </div>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     <div class=""
         style="background: linear-gradient(96.2deg, rgb(255, 230, 112) 10.4%, rgb(255, 100, 100) 43.8%, rgb(0, 93, 219) 105.8%);width: 98.85vw;height: 70px;padding-top: 10px;">
         <div class="navbar-header page-scroll">
@@ -79,12 +58,6 @@ defineProps({
             </a>
         </div>
     </div>
-=======
-</div>
->>>>>>> Stashed changes
-=======
-</div>
->>>>>>> Stashed changes
 
     <div id="wrapper">
         <section id="intro" class="intro" style="font-family: 'IBM Plex Sans', sans-serif">
