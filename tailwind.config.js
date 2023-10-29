@@ -12,9 +12,6 @@ export default {
 
     theme: {
         extend: {
-            backgroundImage: {
-                ttuPattern: "url('https://ghogli.com.ph/wp-content/uploads/2023/04/ezgif.com-gif-maker-17.webp')",
-              },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },

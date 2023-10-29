@@ -2,7 +2,10 @@
 import { Head, Link } from "@inertiajs/vue3";
 import { ref } from "vue";
 import PrimaryButton from "../Components/PrimaryButton.vue";
+import Footer from '@/Components/Footer.vue'
 import NavBar from "@/Components/NavBar.vue";
+
+const bgImage = ref('https://ghogli.com.ph/wp-content/uploads/2023/04/ezgif.com-gif-maker-17.webp')
 
 defineProps({
     canLogin: {
@@ -24,63 +27,25 @@ defineProps({
 
 <template>
     <NavBar />
-
-    <div>
-        <NavBar />
-        <section>
-            <div
-                class="border-transparent rounded-md shadow-xl focus:box-content h-40 w-auto p-4 border-4 bg-green-300"
-            >
-                <div>
-                    <div>
-                        <div>
-                            <div>
-                                <h2
-                                    class="text-white font-sans text-7xl font-semibold text-center"
-                                >
-                                    MUNICIPALITY OF BALETE BATANGAS
-                                </h2>
-                            </div>
-                            <div>
-                                <h4
-                                    class="text-black text-xl font-sans text-center"
-                                >
-                                    You're welcome to our MUNICIPALITY
-                                </h4>
-                            </div>
-                            <div>
-                                <div
-                                    class="wow fadeInRight"
-                                    data-wow-delay="0.1s"
-                                ></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
-                                <img src="Picture/municipal.jpg" class="img-responsive" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="bg-gray-100 py-20">
+        <div class="grid grid-cols-2 mx-20 border shadow-lvl-2 bg-white">
+            <div class="text-right px-4 py-6">
+                <h1 class="text-8xl font-bold uppercase">Municipality of Balete Batangas</h1>
+                <p class="text-2xl">Your are welcome to our Municipality</p>
             </div>
-        </section>
-        <section class="bg-gray-900 bg-ttuPattern bg-cover py-20 sm:py-32">
-            <div>
-                <h2
-                    class="text-neutral-900 text-center text-6xl font-semibold font-sans"
-                >
+            <img :src="bgImage" alt="">
+        </div>
+        <div class="grid grid-cols-2 mx-20 border shadow-lvl-2 mt-10 bg-white">
+            <div class="text-right px-40">
+                <img class="m-auto w-full aspect-square  animate-jump-in animate-ease-in animate-delay-300"
+                    src="../../images/mayor.png" alt="" />
+            </div>
+            <div class="text-left px-4 py-2">
+
+                <h2 class="text-neutral-900 text-left text-6xl font-semibold font-sans">
                     Welcome to Balete, Batangas
                 </h2>
-            </div>
-            <div>
-                <img
-                    class="h-80 w-80 animate-jump-in animate-ease-in animate-delay-300"
-                    src="../../images/mayor.png"
-                    alt=""
-                />
-                <h4
-                    class="mt-20 text-white text-center font-semibold font-sans text-2xl"
-                >
+                <h4 class="mt-20 text-gray-800 text-center font-semibold font-sans text-2xl">
                     The Municipality of Balete in Batangas is a warm hug to
                     those who long to veer away from the troubles of the city.
                     Bike in and around the place and feel the gentle hills
@@ -94,119 +59,9 @@ defineProps({
                     have one of the most comforting afternoons of your life.
                 </h4>
             </div>
-        </section>
-
-        <footer
-            style="
-                background-image: -moz-linear-gradient(
-                    #000000,
-                    #097950,
-                    #00d4ff
-                );
-                color: ;
-            ">
-            <div class="shadow-XL container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <div class="wow fadeInDown" data-wow-delay="0.1s">
-                            <div class="widget">
-                                <h5>FROM OUR BELOVED</h5>
-                                <p style="color: #0a0a0a">
-                                    Mayor Wilson Maralit
-                                </p>
-                            </div>
-                        </div>
-                        <div class="wow fadeInDown" data-wow-delay="0.1s">
-                            <div class="widget">
-                                <h5>Information</h5>
-                                <ul>
-                                    <li>
-                                        <a style="color: #0a0a0a" href="#">Home</a>
-                                    </li>
-                                    <li>
-                                        <a style="color: #0a0a0a" href="#">Location</a>
-                                    </li>
-                                    <li>
-                                        <a style="color: #0a0a0a" href="#">Barangays</a>
-                                    </li>
-                                    <li>
-                                        <a style="color: #0a0a0a" href="#">Mayor</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="wow fadeInDown" data-wow-delay="0.1s">
-                            <div class="widget">
-                                <h5>VISIT US</h5>
-                                <p>At our municipal hall</p>
-                                <ul>
-                                    <li>
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-calendar-o fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                        Monday - Saturday, 8am to 10pm
-                                    </li>
-                                    <li>
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                        (043) 740 9638
-                                    </li>
-                                    <li>
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                        xinfo@baletebatangas.gov.ph
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="wow fadeInDown" data-wow-delay="0.1s">
-                            <div class="widget">
-                                <h5>Our location</h5>
-                                <p>Poblacion, Balete, Batangas</p>
-                            </div>
-                        </div>
-                        <div class="wow fadeInDown" data-wow-delay="0.1s">
-                            <div class="widget">
-                                <h5>Follow us</h5>
-                                <ul class="company-social">
-                                    <li class="social-facebook">
-                                        <a href="https://www.facebook.com/559896924173732?ref=embed_page"><i
-                                                class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li class="social-twitter">
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li class="social-google">
-                                        <a href="https://www.baletebatangas.gov.ph/"><i class="fa fa-google"></i></a>
-                                    </li>
-                                    <li class="social-vimeo">
-                                        <a href="#"><i class="fa fa-vimeo-square"></i></a>
-                                    </li>
-                                    <li class="social-dribble">
-                                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        </div>
     </div>
-
-
-    <!-- Core JavaScript Files -->
-    <!-- <script src="js/wow.min.js"></script>
-<script src="js/stellar.js"></script>
-<script src="plugins/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-<script src="js/nivo-lightbox.min.js"></script>
-<script src="js/custom.js"></script> -->
+    <Footer />
 </template>
 
 <style>

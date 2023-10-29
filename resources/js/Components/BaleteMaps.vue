@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto relative">
-    <div class="rounded bg-slate-700 shadow my-3 p-3 border grid place-content-center mx-auto">
+    <div class="rounded bg-green-950 shadow my-3 p-3 border grid place-content-center mx-auto">
       <!-- <div class="flex">
         <div>
           <img class="w-48 rounded mr-2" :src="imgSrc + '&size=600x450&maptype=roadmap'" alt="test" @error="imgError">
