@@ -23,26 +23,36 @@ defineProps({
 </script>
 
 <template>
+    <NavBar />
+
     <div>
         <NavBar />
         <section>
-            <div class="border-transparent rounded-md shadow-lg focus:box-content h-40 w-auto p-4 border-4 bg-green-300">
+            <div
+                class="border-transparent rounded-md shadow-xl focus:box-content h-40 w-auto p-4 border-4 bg-green-300"
+            >
                 <div>
                     <div>
                         <div>
                             <div>
-                                <h2 class="text-white font-sans text-7xl font-semibold text-center">
+                                <h2
+                                    class="text-white font-sans text-7xl font-semibold text-center"
+                                >
                                     MUNICIPALITY OF BALETE BATANGAS
                                 </h2>
                             </div>
                             <div>
-                                <h4 class="text-black text-xl font-sans text-center">
+                                <h4
+                                    class="text-black text-xl font-sans text-center"
+                                >
                                     You're welcome to our MUNICIPALITY
                                 </h4>
                             </div>
                             <div>
-                                <div class="wow fadeInRight" data-wow-delay="0.1s">
-                                </div>
+                                <div
+                                    class="wow fadeInRight"
+                                    data-wow-delay="0.1s"
+                                ></div>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -56,33 +66,43 @@ defineProps({
         </section>
         <section class="bg-gray-900 bg-ttuPattern bg-cover py-20 sm:py-32">
             <div>
-                <h2 class="text-neutral-900 text-center text-6xl font-semibold font-sans">
+                <h2
+                    class="text-neutral-900 text-center text-6xl font-semibold font-sans"
+                >
                     Welcome to Balete, Batangas
                 </h2>
             </div>
-            <div><img class="h-80 w-80 animate-jump-in animate-ease-in animate-delay-300" src="../../images/mayor.png"
-                    alt="">
-                <h4 class="mt-20 text-white text-center font-semibold font-sans text-2xl">
-                    The Municipality of Balete in Batangas is a warm
-                    hug to those who long to veer away from the
-                    troubles of the city. Bike in and around the
-                    place and feel the gentle hills beneath, observe
-                    a little bit more and take-in the slow, relaxing
-                    cadence of suburban life. Find yourself in a
-                    handful of recreational resorts and be
-                    overwhelmed not only by the amenities but also
-                    by its serene backdrop--- Lake Taal. Witness the
-                    crimson sun set as it hides itself behind the
-                    famous Taal Volcano, munch on a healthy serving
-                    of Sumang Dapa paired with a steaming cup of
-                    Barako, and you'd have one of the most
-                    comforting afternoons of your life.
+            <div>
+                <img
+                    class="h-80 w-80 animate-jump-in animate-ease-in animate-delay-300"
+                    src="../../images/mayor.png"
+                    alt=""
+                />
+                <h4
+                    class="mt-20 text-white text-center font-semibold font-sans text-2xl"
+                >
+                    The Municipality of Balete in Batangas is a warm hug to
+                    those who long to veer away from the troubles of the city.
+                    Bike in and around the place and feel the gentle hills
+                    beneath, observe a little bit more and take-in the slow,
+                    relaxing cadence of suburban life. Find yourself in a
+                    handful of recreational resorts and be overwhelmed not only
+                    by the amenities but also by its serene backdrop--- Lake
+                    Taal. Witness the crimson sun set as it hides itself behind
+                    the famous Taal Volcano, munch on a healthy serving of
+                    Sumang Dapa paired with a steaming cup of Barako, and you'd
+                    have one of the most comforting afternoons of your life.
                 </h4>
             </div>
         </section>
 
-        <footer style="
-                background-image:-moz-linear-gradient(#000000,#097950,#00d4ff); 
+        <footer
+            style="
+                background-image: -moz-linear-gradient(
+                    #000000,
+                    #097950,
+                    #00d4ff
+                );
                 color: ;
             ">
             <div class="shadow-XL container">
